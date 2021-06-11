@@ -16,8 +16,9 @@ $naiyou = $_POST["naiyou"];
 $hand = $_POST["hand"];
 
 //DB接続
+//IDとPASSは、gitにはアップロード致しません
 try {
-    $pdo = new PDO('mysql:dbname=gs_db2;charset=utf8;host=localhost','root','root');
+    $pdo = new PDO('mysql:dbname=gs_db2;charset=utf8;host=localhost','****','****');
 } catch (PDOException $e){
     exit('DbConnectError:' .$e->getMessage());
 }
