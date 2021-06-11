@@ -1,6 +1,6 @@
 <?php
 try {
-    $pdo = new PDO('mysql:dbname=gs_db2;charset=utf8;host=localhost','root','root');
+    $pdo = new PDO('mysql:dbname=gs_db2;charset=utf8;host=localhost','****','****'); //IDとPASSは、gitにはアップロード致しません
 } catch (PDOException $e){
     exit('DbConnectError:' .$e->getMessage());
 }
